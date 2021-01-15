@@ -1,3 +1,13 @@
+# Organisational config for stalebot
+# https://github.com/probot/stale
+#
+# To enable uncomment and add the following to .github/stale.yml
+##########################################
+##Inherit for lancachenet/.github
+#_extends: .github
+#
+##########################################
+
 # Number of days of inactivity before an issue becomes stale
 daysUntilStale: 60
 # Number of days of inactivity before a stale issue is closed
@@ -12,6 +22,12 @@ exemptLabels:
   - bug
   - for-reference
   - feedback
+# Set to true to ignore issues in a project (defaults to false)
+exemptProjects: true
+# Set to true to ignore issues in a milestone (defaults to false)
+exemptMilestones: true
+# Set to true to ignore issues with an assignee (defaults to false)
+exemptAssignees: true
 # Label to use when marking an issue as stale
 staleLabel: inactive
 # Comment to post when marking an issue as stale. Set to `false` to disable
